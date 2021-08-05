@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -20,12 +20,7 @@ import { mainListItems } from "./listItems";
 import Logo from "./img/1pslogo.png";
 import { CardMedia } from "@material-ui/core";
 
-import { useLocation } from "react-router-dom";
 
-const titles = {
-  "/": "ERP System",
-  "/thirdparty": "Third Party",
-};
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -103,12 +98,7 @@ export default function Header() {
     setOpen(false);
   };
 
-  const location = useLocation();
-  const [title, setTitle] = useState(titles["/"]);
-
-  useEffect(() => {
-    setTitle(titles[location.pathname]);
-  }, [location.pathname]);
+ 
   const classes = useStyles();
   return (
     <Box>
@@ -146,7 +136,7 @@ export default function Header() {
       </AppBar>
 
       <Drawer
-        variant="Temporary"
+        variant="temporary"
         classes={{
           paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose),
         }}

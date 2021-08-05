@@ -1,0 +1,42 @@
+[
+  {
+    "id": "App-001",
+    "date":"16-12-20",
+    "request": "New Shoes",
+    "requestedby": "Mark Hammondd",
+    "status": "Approved",
+    "agency": "Test Agency",
+    "amount": "£78.93"
+    
+  },
+  {
+    "id": "App-002",
+    "date":"16-12-20",
+    "request": "Fancy Pens",
+    "requestedby": "Tony Beard",
+    "status": "Rejected",
+    "agency": "Test Agency",
+    "amount": "£6.86"
+    
+  },
+  {
+    "id": "App-003",
+    "date":"16-12-20",
+    "request": "Replace Broken Laptop ",
+    "requestedby": "Rachiel Gove",
+    "status": "Approved",
+    "agency": "Test Agency",
+    "amount": "£899.98"
+    
+  },
+  {
+    "id": "App-004",
+    "date":"16-12-20",
+    "request": "Better Soap",
+    "requestedby": "Judy Front",
+    "status": "Rejected",
+    "agency": "Test Agency",
+    "amount": "£8.09"
+    
+  }
+]
