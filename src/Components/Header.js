@@ -18,9 +18,7 @@ import NotificationsIcon from "@material-ui/icons/Notifications";
 import { mainListItems } from "./listItems";
 
 import Logo from "./img/1pslogo.png";
-import { CardMedia } from "@material-ui/core";
-
-
+import { Avatar, Button, CardMedia } from "@material-ui/core";
 
 const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
@@ -88,6 +86,11 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
     overflow: "auto",
   },
+  instanceButton: {
+    backgroundColor: "green",
+    color: "#fff",
+    marginRight: theme.spacing(2),
+  },
 }));
 export default function Header() {
   const [open, setOpen] = React.useState(false);
@@ -98,7 +101,6 @@ export default function Header() {
     setOpen(false);
   };
 
- 
   const classes = useStyles();
   return (
     <Box>
@@ -127,11 +129,8 @@ export default function Header() {
           >
             Dashboard
           </Typography>
-          <IconButton>
-            <Badge badgeContent={4} className={classes.notificationsIconBadge}>
-              <NotificationsIcon className={classes.notificationsIcon} />
-            </Badge>
-          </IconButton>
+          <Button className={classes.instanceButton}>Instance</Button>
+          <Avatar></Avatar>
         </Toolbar>
       </AppBar>
 
