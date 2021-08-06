@@ -5,15 +5,12 @@ import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
 import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
-import { Card} from "@material-ui/core";
-
+import { Card } from "@material-ui/core";
 import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
 import Avatar from "@material-ui/core/Avatar";
 import { red } from "@material-ui/core/colors";
 import Equalizer from "@material-ui/icons/Equalizer";
-import AxiosTest from "./AxiosTest"
-
 
 // function Copyright() {
 //   return (
@@ -44,12 +41,7 @@ const useStyles = makeStyles((theme) => ({
   fixedHeight: {
     height: 240,
   },
-  notificationsIcon: {
-    color: "#000000",
-  },
-  notificationsIconBadge: {
-    color: "red",
-  },
+
   underDrawerLogoDivider: {
     background: "green",
   },
@@ -394,7 +386,6 @@ export default function Dashboard() {
           </Grid>
         </Grid>
       </Container>
-      
     </Box>
   );
 }

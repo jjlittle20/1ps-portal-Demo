@@ -129,7 +129,7 @@ export default function Header() {
           >
             Dashboard
           </Typography>
-          <Button className={classes.instanceButton}>Instance</Button>
+          <Button className={classes.instanceButton}>View Instance</Button>
           <Avatar></Avatar>
         </Toolbar>
       </AppBar>

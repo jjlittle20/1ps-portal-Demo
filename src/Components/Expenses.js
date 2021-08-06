@@ -9,7 +9,7 @@ import TableRow from "@material-ui/core/TableRow";
 import { Box, Container, Typography, Button } from "@material-ui/core";
 import Switch from "@material-ui/core/Switch";
 import { Link } from "react-router-dom";
-
+import ExpenseDashboardCard from "./ExpenseDashboardCard";
 const useStyles = makeStyles((theme) => ({
   seeMore: {
     marginTop: theme.spacing(3),
@@ -82,6 +82,7 @@ export default function Expenses() {
   };
   return (
     <Container className={classes.tableContainer}>
+      <ExpenseDashboardCard />
       <Box display="sticky" boxShadow={10} className={classes.tableHeadBox}>
         <Box className={classes.switchbox} display="flex" flexWrap="wrap">
           {" "}
